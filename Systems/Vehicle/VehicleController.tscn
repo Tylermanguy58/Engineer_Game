@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqrtkj73nnsue"]
+
+[ext_resource type="Script" uid="uid://dxmwpg7i08d7r" path="res://Systems/Vehicle/VehicleController.cs" id="1_wgx8c"]
+[ext_resource type="Script" uid="uid://cwmxadrhejtbu" path="res://Systems/Vehicle/VehicleInputController.cs" id="2_o1ksh"]
+
+[node name="VehicleController" type="Node3D" node_paths=PackedStringArray("input")]
+script = ExtResource("1_wgx8c")
+input = NodePath("VehicleInputController")
+
+[node name="VehicleInputController" type="Node" parent="."]
+script = ExtResource("2_o1ksh")

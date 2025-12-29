@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://botdpdwmt3x10"]
+
+[ext_resource type="Script" uid="uid://boodg756cibvu" path="res://Systems/Firearm/Hitscan/HitscanFirearm.cs" id="1_a0tk4"]
+[ext_resource type="Script" uid="uid://bqsic1sin0mes" path="res://Systems/Firearm/Projectile/ProjectileFirearm.cs" id="1_a202f"]
+[ext_resource type="Resource" uid="uid://xeg1n2qwqk7" path="res://Systems/Firearm/Properties/Mosin-Nagant.tres" id="2_noarx"]
+
+[node name="Root" type="Node3D"]
+
+[node name="Mosin-Nagant" type="Node3D" parent="."]
+script = ExtResource("1_a0tk4")
+baseProperties = ExtResource("2_noarx")
+
+[node name="Panzerfaust" type="Node3D" parent="."]
+script = ExtResource("1_a202f")

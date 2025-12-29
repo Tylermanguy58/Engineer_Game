@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2r6pdx3wtm83"]
+
+[ext_resource type="Script" uid="uid://30jma8yt3int" path="res://Systems/Player/Controller/PlayerController.cs" id="1_l2hqe"]
+[ext_resource type="PackedScene" uid="uid://cpnr6kxyfjnia" path="res://Systems/Character/Data/Prefab/CharacterController.tscn" id="2_kboxw"]
+[ext_resource type="PackedScene" uid="uid://cqrtkj73nnsue" path="res://Systems/Vehicle/VehicleController.tscn" id="3_2ueex"]
+
+[node name="Player" type="Node3D"]
+
+[node name="PlayerController" type="Node" parent="." node_paths=PackedStringArray("vehicleController", "characterController")]
+script = ExtResource("1_l2hqe")
+currentController = 1
+vehicleController = NodePath("SubControllers/VehicleController")
+characterController = NodePath("SubControllers/CharacterController")
+
+[node name="SubControllers" type="Node" parent="PlayerController"]
+
+[node name="CharacterController" parent="PlayerController/SubControllers" instance=ExtResource("2_kboxw")]
+
+[node name="VehicleController" parent="PlayerController/SubControllers" instance=ExtResource("3_2ueex")]
