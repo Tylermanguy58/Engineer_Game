@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ArcadeHealthProperties" load_steps=2 format=3 uid="uid://br3ygl8rym3uv"]
+
+[ext_resource type="Script" uid="uid://sol2pm3l3nvr" path="res://Systems/Health/Arcade/ArcadeHealthProperties.cs" id="1_nq0ii"]
+
+[resource]
+script = ExtResource("1_nq0ii")
+metadata/_custom_type_script = "uid://sol2pm3l3nvr"

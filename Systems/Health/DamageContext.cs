@@ -9,6 +9,5 @@ namespace ParadigmBlock.Systems.Health
     {
         public TProperites properties;
         public TState state;
-        public Health health;
     }
 }

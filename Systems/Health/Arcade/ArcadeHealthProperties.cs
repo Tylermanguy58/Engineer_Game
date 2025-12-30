@@ -3,6 +3,7 @@ using System;
 
 namespace ParadigmBlock.Systems.Health
 {
+    [GlobalClass]
     public partial class ArcadeHealthProperties : HealthProperties
     {
 
