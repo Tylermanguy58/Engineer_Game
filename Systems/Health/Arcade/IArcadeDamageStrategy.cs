@@ -3,11 +3,7 @@ using System;
 
 namespace ParadigmBlock.Systems.Health
 {
-    public partial class IArcadeDamageStrategy : IDamageStrategy<ArcadeDamageContext, ArcadeHealthProperties, ArcadeHealthState>
+    public partial interface IArcadeDamageStrategy : IGenericDamageStrategy<ArcadeHealth, ArcadeDamageContext>
     {
-        public void Damage(ArcadeDamageContext context)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

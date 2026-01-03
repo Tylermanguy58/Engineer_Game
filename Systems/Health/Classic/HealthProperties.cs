@@ -6,6 +6,6 @@ namespace ParadigmBlock.Systems.Health
     [GlobalClass]
     public partial class HealthProperties : Resource
     {
-        int maxHealth;
+        [Export] public int maxHealth;
     } 
 }

@@ -3,8 +3,7 @@ using System;
 
 namespace ParadigmBlock.Systems.Health
 {
-    public interface IArcadeHealStrategy : IHealStrategy<ArcadeHealContext, ArcadeHealthProperties, ArcadeHealthState>
+    public interface IArcadeHealStrategy : IGenericHealStrategy<ArcadeHealth, ArcadeHealContext>
     {
-
     }
 }

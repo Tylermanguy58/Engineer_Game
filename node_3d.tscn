@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://botdpdwmt3x10"]
 
 [ext_resource type="Script" uid="uid://cwalcqlpljb5s" path="res://Systems/Health/Arcade/ArcadeHealth.cs" id="1_a202f"]
-[ext_resource type="Resource" uid="uid://br3ygl8rym3uv" path="res://Systems/Health/Arcade/arcadehealth.tres" id="2_noarx"]
+[ext_resource type="Resource" uid="uid://3bgun64rjsmo" path="res://Systems/Health/Arcade/ArcadeHealthProperties.tres" id="2_a0tk4"]
 [ext_resource type="Script" uid="uid://fv0w82732fgv" path="res://Systems/Test.cs" id="3_a0tk4"]
 
 [node name="Root" type="Node3D"]
@@ -12,7 +12,8 @@
 
 [node name="ArcadeHealth" type="Node3D" parent="."]
 script = ExtResource("1_a202f")
-exportedProperties = ExtResource("2_noarx")
+exportedProperties = ExtResource("2_a0tk4")
 
-[node name="test" type="Node3D" parent="."]
+[node name="test" type="Node3D" parent="." node_paths=PackedStringArray("node")]
 script = ExtResource("3_a0tk4")
+node = NodePath("../ArcadeHealth")

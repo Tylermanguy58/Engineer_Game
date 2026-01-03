@@ -3,8 +3,11 @@ using System;
 
 namespace ParadigmBlock.Systems.Health
 {
-    public partial class ArcadeDamageContext : DamageContext<ArcadeHealthProperties, ArcadeHealthState>
+    public partial class ArcadeDamageContext : GenericDamageContext
     {
+        public ArcadeDamageContext() : base()
+        {
 
+        }
     }
 }
